@@ -20,10 +20,21 @@ public class WarComparator {
 
     public static void main(String[] args) throws IOException {
 	if (args.length < 4) {
-	    System.err.println("Usage: WarComparator <newWar> <newWarExtractFolder> <oldWar> ");
-	    System.exit(1);
+	    System.err.println("Usage: WarComparator <newWar> <newWarExtractFolder> <oldWar> <oldWarExtractFolder>");
+	    System.err.println("newWar = New war file path");
+	    System.err.println("oldWar = New war file path");
+	    System.err.println("newWarExtractFolder = Temporary folder where new war files can be extracted for comparasion");
+	    System.err.println("oldWarExtractFolder = Temporary folder where old war files can be extracted for comparasion");
+	    System.exit(2);
 	}
-	isDifferent(args[0], args[1], args[2], args[3]);
+	boolean result = isDifferent(args[0], args[1], args[2], args[3]);
+	if (result) {
+	    System.out.println("Wars are different");
+	    System.exit(1);
+	} else {
+	    System.out.println("Wars are similar");
+	    System.exit(0);
+	}
     }
 
     public static boolean isDifferent(String newFile, String newFileExtractionFolder, String oldFile,
