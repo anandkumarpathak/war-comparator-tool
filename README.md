@@ -15,7 +15,7 @@ java -jar -cp warcomparator-1.0.0-SNAPSHOT.jar;commons-codec-1.10.jar;guava-19.0
 
 Where
 
-newWar = New war file path
-oldWar = New war file path
-newWarExtractFolder = Temporary folder where new war files can be extracted for comparasion
+newWar = New war file path,
+oldWar = New war file path,
+newWarExtractFolder = Temporary folder where new war files can be extracted for comparasion,
 oldWarExtractFolder = Temporary folder where old war files can be extracted for comparasion
