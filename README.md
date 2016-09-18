@@ -11,4 +11,4 @@ Steps to run:
 
 The tool can be run from command line as below:
 
-java -jar -cp warcomparator-1.0.0-SNAPSHOT.jar;commons-codec-1.10.jar;guava-19.0.jar com.andy.tools.WarComparator <newWar> <newWarExtractFolder> <oldWar> <oldWarExtractFolder>
+java -jar -cp warcomparator-1.0.0-SNAPSHOT.jar;commons-codec-1.10.jar;guava-19.0.jar com.andy.tools.WarComparator &lt;newWar&gt; <newWarExtractFolder> <oldWar> <oldWarExtractFolder>
